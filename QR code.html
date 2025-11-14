@@ -359,7 +359,6 @@
             return;
           }
 
-          // Format: WIFI:T:WPA;S:NetworkName;P:Password;H:false;;
           qrData = `WIFI:T:${security};S:${ssid};P:${password};H:${hidden};;`;
         }
 
@@ -408,8 +407,7 @@
           generateQR();
         }
       });
-
-      // Ctrl+Enter shortcut for WiFi inputs and dropdown
+      
       const wifiInputs = document.querySelectorAll(
         "#wifiSSID, #wifiPassword, #wifiSecurity"
       );
